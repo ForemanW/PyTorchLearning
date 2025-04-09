@@ -1,6 +1,48 @@
 This will be where I write notes as I follow the freecodecamp 25 hour deep learning with pytorch tutorial!
 
 ML: Turning data into numbers and finding patterns in those numbers - different from andrew ng's definition but similar idea
-turning data into numbers = encoding
+turning data (features) into numbers = encoding?
+  Traditional programming: give explicit directions on manipulations to an input to create a desired output
+  vs. ML: give an example input and output (in the case of supervised), algorithm figures out 'rules' or patterns between inputs and outputs, bridging inputs and idealized outputs
+  
+  Ideal use: for a complex problem, where one can't think of all the explicit rules to create an output
+    Great for use with continually changing environments (ie updating with new datasets in the case of DMS, seems like a perfect use)
+    Discovering insights within large collections of data - also perfect for the case of DMS datasets. 
+    When errors are acceptable
+    'if you can build a simple rule-based system, do that instead' - google's ML handbook
+idea - use a pre-trained language model and fine-tune with scFv DMS data since we only have ~10,000 mutants
 
-Deep learning: 
+Deep learning is better for unstructured data, data that's all over the place e.g. natural language vs. structured data, where standard ML may be preferred
+
+Common algorithms:
+  Structured data: ('shallow algorithms')
+    Random forest (RF)
+    Gradient boosted (minimized gradient descent that builds off the previous function)
+    Naive Bayes
+    Nearest Neighbor
+    Support vector machine
+
+  Unstructured data: 
+    Neural networks
+    Fully connected neural network
+    Convolutional neural network
+    Recurrent neural network
+    Transformer 
+
+What are neural networks?
+Check out 3b1b video on neural networks, loved that guy's diff eq videos in college
+Neural network workflow: take an input, numerically encode it, pass it through a neural network, each layer in the neural network will perform mathematical operations on the encoded input, and finally decode and create output
+Anatomy: Each layer is usually a combination of linear and nonlinear functions that 'draws patterns' in our data
+Transfer learning: taking patterns 1 model has learned from a dataset and transferring it to another model. Will probably what I'll use with ESM for my combinatorial library design
+
+Pytorch time! What is and why use pytorch?
+Most popular research deep learning framework, lets you write fast deep learning code in python, able to run on multiple GPUs
+Easy access to many pre-built deep learning models (Torch Hub)
+Ecosystem for the whole stack of ML - preprocess data, model data, and deploy model in your application/cloud
+Most popular deep learning framework per data from paperswithcode
+
+What is a tensor? matrices, or really any representation of numbers. So when you numerically encode input data youre turning it into a tensor. A neural network performs mathematical operations on tensors, hence the cool google name tensorflow. Then we can take the output tensor and decode it into a human interpretable output
+
+
+
+
