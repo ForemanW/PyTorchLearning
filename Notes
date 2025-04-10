@@ -42,6 +42,18 @@ Ecosystem for the whole stack of ML - preprocess data, model data, and deploy mo
 Most popular deep learning framework per data from paperswithcode
 
 What is a tensor? matrices, or really any representation of numbers. So when you numerically encode input data youre turning it into a tensor. A neural network performs mathematical operations on tensors, hence the cool google name tensorflow. Then we can take the output tensor and decode it into a human interpretable output
+Time to look at how we perform operations on tensors in pytorch
+
+Pytorch workflow:
+1. get data ready, turn into tensors
+2. build or pick a pre-trained model to suit your problem
+  pick a loss function and optimizer
+  build a training loop
+3. fit the model to the data and make a prediction
+4. evaluate model
+5. improve through experimentation
+6. save and reload your trained model
+
 
 
 
